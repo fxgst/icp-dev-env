@@ -1,5 +1,9 @@
 FROM --platform=linux/amd64 rust:1.75-slim-bookworm
 
+LABEL org.opencontainers.image.source=https://github.com/fxgst/icp-dev-env
+LABEL org.opencontainers.image.description="My container image"
+LABEL org.opencontainers.image.licenses=MIT
+
 ENV NVM_DIR=/root/.nvm
 ENV NVM_VERSION=v0.39.7
 ENV NODE_VERSION=21.5.0
