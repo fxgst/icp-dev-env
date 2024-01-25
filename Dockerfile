@@ -31,4 +31,4 @@ RUN curl -sLO https://download.dfinity.systems/ic/${POCKET_IC_SERVER_HASH}/opens
 RUN gzip -d pocket-ic.gz
 RUN chmod +x pocket-ic
 
-LABEL org.opencontainers.image.description="Test from dockerfile"
+LABEL org.opencontainers.image.description "Test from dockerfile"
