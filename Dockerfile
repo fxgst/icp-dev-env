@@ -24,7 +24,7 @@ RUN sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
 RUN rustup target add wasm32-unknown-unknown
 
 # Install PocketIC Python
-RUN pip3 install pocket-ic==${POCKET_IC_PYTHON_VERSION}
+RUN pip3 install pocket-ic==${POCKET_IC_PYTHON_VERSION} --break-system-packages
 
 # Download the PocketIC server
 RUN curl -sLO https://download.dfinity.systems/ic/${POCKET_IC_SERVER_HASH}/openssl-static-binaries/x86_64-linux/pocket-ic.gz
