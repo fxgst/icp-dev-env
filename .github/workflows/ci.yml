@@ -44,3 +44,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          outputs: annotation-index.org.opencontainers.image.description=Test description

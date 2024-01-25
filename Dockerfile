@@ -30,5 +30,3 @@ RUN pip3 install pocket-ic==${POCKET_IC_PYTHON_VERSION} --break-system-packages
 RUN curl -sLO https://download.dfinity.systems/ic/${POCKET_IC_SERVER_HASH}/openssl-static-binaries/x86_64-linux/pocket-ic.gz
 RUN gzip -d pocket-ic.gz
 RUN chmod +x pocket-ic
-
-LABEL org.opencontainers.image.description="Test from dockerfile"
