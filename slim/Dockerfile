@@ -18,7 +18,7 @@ RUN . "${NVM_DIR}/nvm.sh" && nvm alias default v${NODE_VERSION}
 ENV DFXVM_INIT_YES=true
 ENV DFX_VERSION=0.24.1
 RUN curl -fsSL https://internetcomputer.org/install.sh | sh
-ENV PATH="/home/blessed/.local/share/dfx/bin:$PATH"
+ENV PATH="/root/.local/share/dfx/bin:$PATH"
 RUN dfx cache install
 
 # Add wasm32-unknown-unknown target
